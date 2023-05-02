@@ -1,0 +1,30 @@
+.m-tp {
+    display: flex;
+}
+
+.m-dhan {
+    height: 30px;
+    width: 60px;
+    border: 1px solid #333;
+}
+
+.m-dhan.on {
+    background: #999;
+}
+
+.m-mp {
+    border: 1px solid #333;
+    width: 400px;
+}
+
+.m-ct {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
+
+.m-ct.hide {
+    display: none;
+}
