@@ -1,0 +1,223 @@
+@charset "UTF-8";
+/* 全界面设置 */
+body {
+	padding: 0;
+	
+}
+/* 主要的上半部分界面*/
+.main {
+	padding: 10px 20px 5px 20px;
+	width: 650px;
+	margin: 0 auto;
+}
+/* 上界面 */
+.mp1 {
+	margin: 0 50px 30px 50px;
+}
+/* 图片设置 */
+.image>img {
+	width: 280px;
+	height: 200px;
+	float: left;
+}
+/* 右侧文字 */
+.m1 {
+	margin: 0 -80px 0 300px;
+}
+/* 右侧标题 */
+.m1>h1 {
+	font-size: 120%;
+	padding: 0 0 10px 0;
+	position: relative;
+}
+/* 右侧标题栏 */
+.m1>h1:before {
+	content: '';
+	width: 35px;
+	height: 3px;
+	background: #0169B2;
+	display: block;
+	position: absolute;
+	bottom: -5px;
+}
+/* 右侧文本框 */
+.m1>p {
+	font-size: 50%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-weight: 800;
+	line-height: 3em;
+}
+/* 右侧按钮 */
+.m1>button {
+	border-radius: 6px;
+	background: #0169B2;
+	height: 30PX;
+	color: white;
+}
+/* 中间界面 */
+.mp2 {
+	margin: 0 50px 0 50px;
+}
+/* 中间界面标题 */
+.m2 {
+    padding: 0 0 10px 0;
+    position: relative;
+}
+.m2>h2 {
+	color: #0169B2;
+	font-size: 100%
+	font-weight: 600;
+}
+/* 标题 */
+.m2>span {
+    font-size: 50%;
+    font-weight: 600;
+}
+/* 中间界面标题栏 */
+.m2:after {
+    content: '';
+    width: 550px;
+    height: 1px;
+    background: #bebebe;
+    display: block;
+    position: absolute;
+    bottom: -5px;
+}
+/* 中间右侧按钮 */
+.m2>button {
+	border-radius: 6px;
+	float: right;
+	background: #0169B2;
+	color: white;
+}
+
+.mn1,.mn2,.mn3 {
+	padding: 30px 0 20px 0;
+	font-size: small;
+    position: relative;
+}
+
+.mn1>p2 {
+	background: #019ee3;
+    color: #ffffff;
+    border-radius: 7.5px;
+}
+
+.mn1>p3,.mn2>p3,.mn3>p3 {
+    text-decoration:underline;
+}
+
+.mn1:before,.mn2:before,.mn3:before {
+  content: '';
+  width: 550px;
+  height: 0.5px;
+  background: #bebebe;
+  display: block;
+  position: absolute;
+  bottom: 0;
+}
+
+.mn2>p2,.mn3>p2 {
+	background: #5aaf72;
+    color: #ffffff;
+    border-radius: 7.5px;
+}
+
+.bot {
+	width: 690px;
+	height: 250px;
+	background: #eee;
+	margin: 0 auto;
+	padding: 0 0 20px 0;
+	
+}
+
+.mt1 {
+	width: 300px;
+	height: 230px;
+	float: left;
+	padding:0 0 0 30px;
+}
+
+.mt1>h1 {
+	font-size: large;
+	font-weight: 600;
+	color: #006699;
+	margin: 15px 0 10px 0;
+}
+
+.mr1 {
+	text-align:center;
+	background: #ffffff;
+	border: 1px #bebebe solid;
+	height: 200px;
+}
+
+.mr1>p:first-child {
+  margin: 0 auto;
+  padding: 20px 0 10px 0;
+  font-size: 100%;
+  font-weight: 550;
+}
+
+.mr1>p:nth-child(2) {
+	color: #006699;
+	font-size: 200%;
+	font-weight: 1000;
+	margin: 0 0 15px 0;
+}
+
+.mr1>p:nth-child(n+3) {
+	margin: 0 auto;
+	font-size: 50%;
+	font-weight: bold;
+}
+
+.mr1>p:nth-child(6) {
+	font-weight: bold;
+	color: #006699;
+	padding: 0 0 15px 0;
+}
+
+.mr1>hr {
+	width: 220px;
+	height: 0.5px;
+	color: #bebebe;
+}
+
+.mt2 {
+	width: 300px;
+	height: 230px;
+	float: right;
+	padding:0 30px 0 0;
+}
+
+.mt2>h1 {
+	font-size: large;
+	font-weight: 600;
+	color: #006699;
+	margin: 15px 0 10px 0;
+}
+
+.mr2 {
+	text-align:center;
+	background: #ffffff;
+	border: 1px #bebebe solid;
+	height: 200px;
+}
+
+.mr2>button {
+	border-radius: 6px;
+	background: #0169B2;
+	height: 35PX;
+	color: #ffffff;
+	margin: 50px 0 15px 0;
+	font-size: 100%;
+}
+
+.mr2>p:nth-child(n+1) {
+	margin: 0 auto;
+	font-weight: bold;
+	font-size: 70%;
+}
