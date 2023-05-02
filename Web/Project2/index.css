@@ -1,1 +1,28 @@
+* {
+    padding: 0;
+    margin: 0;
+}
 
+li {
+    list-style-type: none;
+
+}
+
+.m-item.red {
+    color: red;
+}
+
+.m-item {
+    cursor: pointer;
+    margin: 20px 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.m-item:hover {
+    background-color: #eee;
+}
+
+.fn-active {
+    background-color: pink;
+}
