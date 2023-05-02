@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: black;
+}
+
+.g-box {
+    width: 935px;
+    height: 575px;
+    background: white;
+    border: 10px solid white;
+    margin: 20px auto;
+    display: block;
+}
+
+.box1,.box2,.box3,.box4,.box5,.box6 {
+    width: 300px;
+    height: 275px;
+    margin: 5px 5px 5px 5px;
+    border: 1px solid grey;
+    float: left;
+}
+
+img {
+    width: 300px;
+    height: 200px;
+}
+
+h1 {
+    font-size: 80%;
+}
+
+.txt>p:first-child{
+    font-size: 80%;
+    float: left;
+    font-weight: bold;
+    color: red;
+}
+
+.txt>p:nth-child(2){
+    font-size: 90%;
+    float: left;
+    font-weight: bold;
+    color: grey;
+}
+
+.price>p:first-child{
+    float: left;
+    color: red;
+    font-size: 90%;
+    padding-top: 15px;
+}
+
+.price>p:nth-child(2){
+    float: left;
+    color: red;
+    font-size: 150%;
+    font-weight: bold;
+    padding-top: 5px;
+}
+
+.hx {
+    float: left;
+    padding-top: 18px;
+    font-size: x-small;
+    color: grey;
+    text-decoration:line-through;
+}
+
+.sold>p:first-child {
+    float: left;
+    display: inline-flex;
+    padding-top: 18px;
+    padding-left: 130px;
+    font-size: 20%;
+    color: red;
+    font-weight: bold;
+}
+
+.sold>p:nth-child(2){
+    float: left;
+    display: inline-flex;
+    padding-top: 18px;
+    font-size: 20%;
+    color: grey;
+}
