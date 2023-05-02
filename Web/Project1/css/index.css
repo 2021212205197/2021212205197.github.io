@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+.header {
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid;
+    margin-bottom: 0;
+    color: #D4D4D4;
+}
+.header>li {
+    list-style: none;
+    margin-left: 8%;
+}
+.menu {
+    /*font-family: Trebuchet MS;*/
+    display: inline-block;
+    text-align: center;
+    text-indent: 3em;
+    line-height: 40px;
+    font-size: 15px;
+    font-style: normal;
+}
+.main {
+    width: 100%;
+}
+
+
+
+
+/* left page */
+.lp {
+    width: 50%;
+    display: inline-block;
+}
+.lnews {
+    color: black;
+    margin-left: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.lnews span+span{
+    margin-top: 10px;
+}
+.lnews>span { 
+    display: block;
+}
+.lat {
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+.lat span+span{
+    margin-top: 10px;
+}
+.lat>span {
+    display: block;
+}
+
+.lp1 {
+    font-size: 20px;
+    color: #919191;
+}
+.lp2 {
+    font-family: Time News Roman;
+    font-size: 30px;
+    font-weight: 900;
+}
+.lcontent {
+    font-size: 20px;
+    color: #919191;
+}
+.lauthor {
+    font-family: Time News Roman;
+    font-size: 20px;
+   	color: black;
+}
+.ltime  {
+   font-size: 20px;
+   color: #aaa;
+}
+
+
+
+/* center pictures */
+.cp {
+    display: inline-block;
+    text-align: center;
+}
+.cp>img {
+    width: 200px;
+    height: 150px;
+    display: block;
+}
+.cp img+img {
+    margin-top: 130px;
+}
+
+
+/* right page */
+.rp {
+    width: 30%;/*right page words setting*/
+    display: inline-block;
+}
+.rp1 {
+    margin-top: 40px;
+    border-bottom: 1px solid;
+}
+.rnews>span {
+    margin-top: 10px;
+    display: block;
+}
+.rp1{   /*Popular.....*/
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 50px;
+}
+.rp div+div {
+    color: black;
+    margin: 15px;
+    margin-left: 150px;
+}
+.rnews {
+    margin-left: 60px;
+}
+.rcontent {
+    font-size: 20px;
+    font-weight: bold;
+}
+.rauthor {
+    font-size: 15px;
+    color: #aaa;
+    margin-bottom: 10px;
+}
+.rtime {
+    font-size: 15px;
+    color: #aaa;
+}
