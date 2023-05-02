@@ -1,0 +1,46 @@
+.g-box {
+    border: 1px solid #000;
+    height: 250px;
+    width:  380px;
+    padding: 20px 10px;
+    position: relative;
+}
+
+.m-mp {
+    display: flex;
+    border: 1px solid #000;
+    height: 35px;
+    margin-top: 10px;
+}
+
+.m-no {
+	width:  35px;
+    height: 35px;
+    border-right: 1px solid #000;
+    text-align: center;
+    line-height: 35px;
+}
+
+.m-info {
+    width: 290px;
+}
+
+.m-del {
+	width: 65px;
+    border-left: 1px solid #000;
+    text-align: center;
+    line-height: 35px;
+}
+
+.m-add {
+    height: 35px;
+    width:  80px;
+    border: 1px solid #000;
+    background: #339966;
+    color: #fff;
+    text-align: center;
+    line-height: 35px;
+    bottom: 20px;
+    right: 10px;
+    position: absolute;
+}
