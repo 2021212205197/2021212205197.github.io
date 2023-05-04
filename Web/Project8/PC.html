@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 新 Bootstrap5 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css">
+
+    <!--  popper.min.js 用于弹窗、提示、下拉菜单 -->
+    <script src="https://cdn.staticfile.org/popper.js/2.9.3/umd/popper.min.js"></script>
+
+    <!-- 最新的 Bootstrap5 核心 JavaScript 文件 -->
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="bg-primary d-flex flex-row ">
+        <div class="container mt-4">
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <a class="nav-link active text-white" href="#">Active</a>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <button type="button" class="btn  dropdown-toggle text-white" data-bs-toggle="dropdown">
+                            Link
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">链接 1</a>
+                            <a class="dropdown-item" href="#">链接 2</a>
+                            <a class="dropdown-item" href="#">链接 3</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled text-white" href="#">Disabled</a>
+                </li>
+            </ul>
+        </div>
+        <div class="m-3">
+            <div class="text-white">
+                <span>登录</span>
+                |
+                <span>注册</span>
+            </div>
+            <div style="background-color: white;">
+                <form class="d-flex">
+                    <div class="dropdown">
+                        <button type="button" class="btn  dropdown-toggle" data-bs-toggle="dropdown">
+                            文章
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">链接 1</a>
+                            <a class="dropdown-item" href="#">链接 2</a>
+                            <a class="dropdown-item" href="#">链接 3</a>
+                        </div>
+                    </div>
+                    <input class="form-control me-2 border border-0" type="text" placeholder="Search">
+
+                </form>
+            </div>
+
+        </div>
+    </header>
+    <div class="d-flex flex-row">
+        <!-- 轮播 -->
+        <div id="demo" class="carousel slide w-75" data-bs-ride="carousel">
+
+            <!-- 指示符 -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            </div>
+
+            <!-- 轮播图片 -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://static.runoob.com/images/mix/img_fjords_wide.jpg" class="d-block"
+                        style="width:100%">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://static.runoob.com/images/mix/img_nature_wide.jpg" class="d-block"
+                        style="width:100%">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://static.runoob.com/images/mix/img_mountains_wide.jpg" class="d-block"
+                        style="width:100%">
+                </div>
+            </div>
+
+            <!-- 左右切换按钮 -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+        <div class="w-25 m-3  bg-light text-center">
+            <div style="border-bottom: 1px dashed #aaa;padding-bottom: 20px;">
+                <h3 class="m-3" style="line-height: 70px;">xxxxxxxx</h3>
+
+
+                <button type="button" class="btn btn-primary"> xxxxxx</button>
+            </div>
+            <div class="m-4">
+                <div class="m-1">
+                    <span class="m-3">23131</span>
+                    <span class="m-3">121421</span>
+                </div>
+                <div class="m-1">
+                    <span class="m-3">23131</span>
+                    <span class="m-3">121421</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="d-flex flex-row">
+        <div class="left w-75 m-2">
+            <h2>xxxxxx</h2>
+            <div class="container mt-3 d-flex flex-row">
+                <div class="card w-75">
+                    <div class="card-body">
+                        <h4 class="card-title">Card title</h4>
+                        <p class="card-text">Some example text. Some example
+                            text.xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx<br />xxxxxxxxxxxxxxxxxxxxx</p>
+                        <p><span>xxxx阅读</span>|<span>xxxx看过</span></p>
+                    </div>
+                </div>
+                <div class="card w-25">
+                    <img class="card-img-top" src="https://static.runoob.com/images/mix/img_avatar.png" alt="Card image"
+                        style="width:100%;height: 100px;">
+                    <div class="card-body">
+                        <h4 class="card-title">John Doe</h4>
+                        <p class="card-text">
+                            Some example text some example text. John Doe is an architect and engineer
+                        </p>
+                        <p><span>xxxx阅读</span>|<span>xxxx看过</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex flex-row m-3">
+                <div class="card" style="width: 33%;">
+                    <img class="card-img-top" src="https://static.runoob.com/images/mix/img_avatar.png" alt="Card image"
+                        style="width:100%;height: 100px;">
+                    <div class="card-body">
+                        <span class="badge rounded-pill bg-warning">xxx</span>
+                        <h4 class="card-title">John Doe</h4>
+                        <p class="card-text">
+                            Some example text some example text. John Doe is an architect and engineer
+                        </p>
+                        <p><span>xxxx阅读</span>|<span>xxxx看过</span></p>
+                    </div>
+                </div>
+                <div class="card" style="width: 33%;">
+                    <img class="card-img-top" src="https://static.runoob.com/images/mix/img_avatar.png" alt="Card image"
+                        style="width:100%;height: 100px;">
+                    <div class="card-body">
+                        <span class="badge rounded-pill bg-warning">xxx</span>
+                        <h4 class="card-title">John Doe</h4>
+                        <p class="card-text">
+                            Some example text some example text. John Doe is an architect and engineer
+                        </p>
+                        <p><span>xxxx阅读</span>|<span>xxxx看过</span></p>
+                    </div>
+                </div>
+                <div class="card" style="width: 33%;">
+                    <img class="card-img-top" src="https://static.runoob.com/images/mix/img_avatar.png" alt="Card image"
+                        style="width:100%;height: 100px;">
+                    <div class="card-body">
+                        <span class="badge rounded-pill bg-warning">xxx</span>
+                        <h4 class="card-title">John Doe</h4>
+                        <p class="card-text">
+                            Some example text some example text. John Doe is an architect and engineer
+                        </p>
+                        <p><span>xxxx阅读</span>|<span>xxxx看过</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex flex-row m-3">
+                <div class="card" style="width: 49%;">
+                    <img class="card-img-top" src="https://static.runoob.com/images/mix/img_avatar.png" alt="Card image"
+                        style="width:100%;height: 140px;">
+                    <div class="card-body">
+                        <h4 class="card-title">John Doe</h4>
+                        <p><span>xxxx阅读</span>|<span>xxxx看过</span></p>
+                    </div>
+                </div>
+                <div class="card" style="width: 49%;">
+                    <img class="card-img-top" src="https://static.runoob.com/images/mix/img_avatar.png" alt="Card image"
+                        style="width:100%;height: 140px;">
+                    <div class="card-body">
+                        <h4 class="card-title">John Doe</h4>
+                        <p><span>xxxx阅读</span>|<span>xxxx看过</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex flex-row m-3">
+                <div class="card" style="width: 33%;position: relative;">
+                    <img class="card-img-top" src="https://static.runoob.com/images/mix/img_avatar.png" alt="Card image"
+                        style="width:100%;height: 100px;">
+                    <button class="btn btn-primary card-img-overlay" disabled
+                        style="width: 50px;height: 50px;position: absolute;top: 50px;left: 10px;">
+                        <span class="spinner-grow spinner-grow-sm"></span>
+                    </button>
+                    <div class="card-body">
+                        <span class="badge rounded-pill bg-warning">xxx</span>
+                        <h2 class="card-title">xxxxxxxxx</h4>
+                            <p><span>xxxx阅读</span>|<span>xxxx看过</span></p>
+                    </div>
+                </div>
+                <div class="card" style="width: 33%;position: relative;">
+                    <img class="card-img-top" src="https://static.runoob.com/images/mix/img_avatar.png" alt="Card image"
+                        style="width:100%;height: 100px;">
+                    <button class="btn btn-primary card-img-overlay" disabled
+                        style="width: 50px;height: 50px;position: absolute;top: 50px;left: 10px;">
+                        <span class="spinner-grow spinner-grow-sm"></span>
+                    </button>
+                    <div class="card-body">
+                        <span class="badge rounded-pill bg-warning">xxx</span>
+                        <h2 class="card-title">xxxxxxxxx</h4>
+                            <p><span>xxxx阅读</span>|<span>xxxx看过</span></p>
+                    </div>
+                </div>
+                <div class="card" style="width: 33%;position: relative;">
+                    <img class="card-img-top" src="https://static.runoob.com/images/mix/img_avatar.png" alt="Card image"
+                        style="width:100%;height: 100px;">
+                    <button class="btn btn-primary card-img-overlay" disabled
+                        style="width: 50px;height: 50px;position: absolute;top: 50px;left: 10px;">
+                        <span class="spinner-grow spinner-grow-sm"></span>
+                    </button>
+                    <div class="card-body">
+                        <span class="badge rounded-pill bg-warning">xxx</span>
+                        <h2 class="card-title">xxxxxxxxx</h4>
+                            <p><span>xxxx阅读</span>|<span>xxxx看过</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="card d-flex flex-row">
+                <img class="card-img-top" src="https://static.runoob.com/images/mix/img_avatar.png" alt="Card image"
+                    style="width:30%;height: 200px;">
+
+                <div class="card-body" style="position: relative;">
+                    <h2 class="card-title">xxxxxxxxxxx</h4>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx<br />xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                        </p>
+                        <p style="position: absolute;right: 10px;"><span>xxxx阅读</span>|<span>xxxx看过</span></p>
+                </div>
+            </div>
+            <div class="card d-flex flex-row">
+                <div class="card-body" style="position: relative;">
+                    <h2 class="card-title">xxxxxxxxxxx</h4>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx<br />xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                        </p>
+                        <p style="position: absolute;right: 10px;"><span>xxxx阅读</span>|<span>xxxx看过</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="right w-25">
+            <div class="container mt-3">
+                <div class="d-flex flex-row justify-content-between">
+                    <h3>图片卡片</h3>
+                    <span>更多></span>
+                </div>
+
+                <div class="card m-3" style="width:300px;overflow: hidden;border-bottom:3px solid #16c9ff;">
+                    <img class="card-img-top" src="https://static.runoob.com/images/mix/img_avatar.png" alt="Card image"
+                        style="width:100%">
+                    <button class="btn btn-primary card-img-overlay p-1" disabled
+                        style="width: 150px;height: 40px;position: absolute;top: 20px;left: 180px; transform:rotateZ(45deg);">
+                        <!-- <span class="spinner-grow spinner-grow-sm"></span> -->
+                        即将开始
+                    </button>
+                    <div class="card-body">
+                        <h4 class="card-title">John Doe</h4>
+                        <p class="card-text">Some example text some example text. John Doe is an architect and engineer
+                        </p>
+                    </div>
+                </div>
+                <div class="card m-3" style="width:300px;overflow: hidden;border-bottom:3px solid #16c9ff;">
+                    <img class="card-img-top" src="https://static.runoob.com/images/mix/img_avatar.png" alt="Card image"
+                        style="width:100%">
+                    <button class="btn btn-primary card-img-overlay p-1" disabled
+                        style="width: 150px;height: 40px;position: absolute;top: 20px;left: 180px; transform:rotateZ(45deg);">
+                        <!-- <span class="spinner-grow spinner-grow-sm"></span> -->
+                        即将开始
+                    </button>
+                    <div class="card-body">
+                        <h4 class="card-title">John Doe</h4>
+                        <p class="card-text">Some example text some example text. John Doe is an architect and engineer
+                        </p>
+                    </div>
+                </div>
+                <div class="card m-3" style="width:300px;">
+                    <div class="card-body p-2" style="border-bottom: 1px dashed #aaa;margin-bottom: 20px;">
+                        <h4 class="card-title">John Doe <span style="color:blue;">xxxx</span></h4>
+                        <p class="card-text">Some example text some example text. John Doe is an architect and engineer
+                        </p>
+                    </div>
+                    <img class="card-img-top" src="https://static.runoob.com/images/mix/img_avatar.png" alt="Card image"
+                        style="width:100%">
+                    <button class="btn btn-secondary card-img-overlay p-1" disabled
+                        style="width: 150px;height: 40px;position: absolute;top: 160px;width: 100%;top:400px;">
+                        <!-- <span class="spinner-grow spinner-grow-sm"></span> -->
+                        即将开始
+                    </button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
