@@ -1,0 +1,790 @@
+/*=================================================================
+
+Template Name: Creato
+Template URI: http://bootstrapcafe.net/demos/creato             
+Description: One Page HTML
+Version: 1.0 
+    
+--------------------------------------------------------------------
+    
+CSS INDEX
+=========
+
+    1.  Base Css
+    2.  Background slider css
+    3.  content-area css
+        3.1. content-top css
+        3.2. content-middle css
+            3.2.1. welcome-area css
+            3.2.2. about-area css
+            3.2.3. service-area css
+            3.2.4. Portfolio-area css
+            3.2.5. contact-area css
+        3.3. content-bottom css
+==============================================*/
+
+/* ==== Base CSS ==== */
+html,
+body { 
+    height: 100%;
+    overflow-x: ;
+ }
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    overflow-x: hidden;
+}
+.body-wrapper{
+    background-image: url(images/banner.jpg);
+    background-position: 0 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    background-color: #000;
+}
+.body-wrapper:before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+99&0+0,1+27 */ /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0.9) 0%,rgba(0,0,0,1) 27%,rgba(0,0,0,1) 99%); /* Chrome10-25,Safari5.1-6 */
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,1) 27%, rgba(0,0,0,1) 99%);
+    background: linear-gradient(to bottom,  rgba(0,0,0,0.9) 0%,rgba(0,0,0,1) 27%,rgba(0,0,0,1) 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+}
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+a:focus { outline: 0 solid }
+img {
+    max-width: 100%;
+    height: auto;
+}
+.fix { 
+    overflow: hidden;
+}
+h1,h2,h3,h4,h5,h6,p{
+    font-family: 'Raleway', sans-serif;
+}
+a {
+    color: #333;
+    text-decoration: none;
+}
+a:hover { 
+    text-decoration: none;
+}
+a:focus { 
+    text-decoration: none;
+}
+p{
+    color: #fcfcfc;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+}
+li{
+    list-style: none;
+    font-family: 'Raleway', sans-serif;
+}
+ul{
+    padding: 0;
+}
+input:focus, input textarea:focus{
+    outline: none;
+}
+.no-padding{
+    padding: 0px;
+}
+p{
+    margin: 0px;
+}
+/* ==== base css ==== */
+
+/* ============================================
+              1.Start Header CSS
+===============================================*/
+.header-area{
+    padding: 34px 0px;
+    -webkit-transition: 0.5s;
+    transition: 1s;
+}
+.logo {
+    padding: 30px 0px;
+}
+.mainmenu ul{}
+.mainmenu ul li{
+    margin-left: 45px;
+    position: relative;
+    padding: 30px 0px;
+}
+.mainmenu ul li a{
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #fff;
+    font-size: 14px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+.mainmenu ul li a:hover{
+    color: #ef4836;
+}
+.mainmenu ul li.active a{
+    color: #ef4836;
+}
+.nav > li > a {
+  padding: 0px 0px;
+}
+.nav > li > a:focus,
+.nav > li > a:hover {
+  background-color: transparent;
+}
+.is-sticky .header-area{
+    background: rgba(32, 94, 186, 0.9);
+    z-index: 999;
+    position: relative;
+    padding:0px;
+}
+.is-sticky .header-area .mainmenu ul li.active a{
+    color: #fff;
+}
+.mainmenu ul.nav.navbar-nav li ul {
+    left: 0px;
+    list-style: outside none none;
+    margin: 0;
+    padding: 20px;
+    position: absolute;
+    top: 200%;
+    width: 200px;
+    visibility: hidden;
+    z-index: -1;
+    transition: .4s;
+    opacity: 0;
+    background: rgba(32, 94, 186, 0.9);
+}
+.mainmenu ul.nav.navbar-nav li:hover ul {
+    visibility: visible;
+    z-index: 99;
+    top: 100%;
+    opacity: 1;
+}
+.mainmenu ul.nav.navbar-nav li ul li { 
+    display: block ;
+    margin-left: 0px;
+    padding: 0px;
+}
+.mainmenu ul.nav.navbar-nav li ul li.active a{ 
+    color: #ef4836;
+}
+.mainmenu ul.nav.navbar-nav li ul li a {
+    display: block;
+    padding: 5px 0px;
+    color: #fff;
+}
+.mainmenu ul.nav.navbar-nav li ul li a:hover {
+    color: #ef4836;
+}
+
+.is-sticky .logo {
+  padding: 23px 0;
+}
+/* ============================================
+               End Header CSS
+===============================================*/
+
+/* ============================================
+               2.Start Creative CSS
+===============================================*/
+.creative-area{
+    padding-top: 150px;
+}
+.creative-content {
+  padding: 65px 48px;
+}
+.video_play_btn{
+    position: absolute;
+    bottom: 35%;
+    left:33%;
+}
+.creative-content h1 span{
+    display: block;
+}
+.creative-content h1{
+    font-weight: 300;
+    font-size: 48px;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 60px;
+    position: relative;
+}
+.creative-content h1:after{
+    position: absolute;
+    content: "";
+    left: -100px;
+    top:30px;
+    width:80px;
+    height: 1px;
+    background: #fff;
+    
+}
+.creative-content p{
+    margin-bottom: 30px;
+}
+.creative-link a{
+    font-weight: 700;
+    color: #fff;
+    -webkit-transition: 0.3s;
+    transition: 0.5s;
+    font-size: 18px;
+}
+.creative-link:hover.creative-link a i{
+    margin-left: 24px;
+}
+.creative-link a i{
+    margin-left: 12px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+/* ============================================
+             End Creative CSS
+===============================================*/
+
+/* ============================================
+             3.Start About CSS
+===============================================*/
+.about-area{
+    padding-top: 200px;
+}
+.about-content{
+    background: url(images/about-bg.jpg) no-repeat 0 0/cover;
+    position: relative;
+}
+.about-content-overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width:100%;
+    height: 100%;
+    background: rgba(32, 94, 186, 0.9);
+}
+.about-desc{
+    padding: 150px 65px;
+}
+.about-desc p{
+    margin-bottom:40px;
+    position: relative;
+}
+.about-desc p:after{
+    position: absolute;
+    content: "";
+    width:40px;
+    height: 1px;
+    background: #fff;
+    left:-65px;
+    top:10px;
+    
+}
+.about-title {
+  left: 15px;
+  position: absolute;
+  top: -127px;
+}
+.about-title h1{
+    font-size: 128px;
+    text-transform: uppercase;
+    opacity: 0.05;
+    font-weight: 800;
+    color: #fff;
+}
+.about-person{
+    position: absolute;
+    top:-150px;
+    right:85px;
+    box-shadow: 0px 0px 29px 0px rgba(0,0,0,0.16);
+}
+/* ============================================
+             End About CSS
+===============================================*/
+
+/* ============================================
+             4.Start Service CSS
+===============================================*/
+.services-area{
+    padding: 180px 0px;
+    position: relative;
+}
+.single-service h2{
+    color: #fff;
+    font-size: 24px;
+    font-weight: 300;
+}
+.single-service h2 span{
+    margin-right: 20px;
+}
+.single-service p {
+  font-size: 14px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.service-title {
+  position: absolute;
+  right: 0;
+  top: 80px;
+}
+.service-title h1{
+    font-size: 128px;
+    text-transform: uppercase;
+    opacity: 0.05;
+    font-weight: 800;
+    color: #fff;
+}
+/* ============================================
+             End Service CSS
+===============================================*/
+
+/* ============================================
+             5.Start Work CSS
+===============================================*/
+.works-area{
+    position: relative;
+    padding-top: 50px;
+}
+.work-title {
+  left: 90px;
+  position: absolute;
+  top: -28px;
+}
+.work-title h1{
+    font-size: 128px;
+    text-transform: uppercase;
+    opacity: 0.05;
+    font-weight: 800;
+    color: #fff;
+}
+.p-items {
+    width: 25%;
+    padding: 0px 3.5px;
+    margin-bottom: 7px;
+}
+.p-items img{
+    width: 100%;
+}
+.p-items a:hover .p-items-overlay {
+  display: inline-block;
+  height: 100%;
+  left: 3.5px;
+  top: 0;
+  width: calc(100% - 7px);
+}
+.p-items a:hover {
+    cursor: url("images/plus.png"), auto;
+}
+.p-items-overlay{
+    position: absolute;
+    left: 50%;
+    top:50%;
+    width:0;
+    height: 0;
+    background: #2362bb;
+    opacity: 0.9;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+.p-max-items {
+    width: 50%;
+}
+.filter-menu {
+    text-align: right;
+}
+.filter-menu li {
+  color: #595959;
+  display: inline-block;
+  margin-bottom: 15px;
+  margin-left: 40px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.filter-menu li.active {
+  color: #fff;
+}
+/* ============================================
+             End Work CSS
+===============================================*/
+
+/* ============================================
+             6.Start Speech CSS
+===============================================*/
+.speech-area{
+    position: relative;
+    padding-top: 200px;
+    z-index: 3;
+}
+.speech-title {
+  position: absolute;
+  right: 0;
+  top: -70px;
+}
+.speech-title h1{
+    font-size: 128px;
+    text-transform: uppercase;
+    opacity: 0.05;
+    font-weight: 800;
+    color: #fff;
+}
+.speech-man{
+    float: left;
+    position: absolute;
+    top: -36px;
+    overflow: visible;
+    left: 84px;
+    width: 470px;
+}
+.speech{
+    float: right;
+    width:50%;
+    padding: 140px 30px 140px 0px;
+}
+.speech-background .owl-stage{
+    background: #ef4836;
+    padding: 60px 0px;
+    background-clip: content-box;
+}
+.Speech-quotes{
+    position: absolute;
+    top:25%;
+    left: 51%;
+}
+.Speech-quotes i{
+    font-size: 60px;
+    opacity: 0.2;
+}
+.speech-para h3{
+    color: #fff;
+}
+.speech-para{
+    position: relative;
+    padding: 0px 30px;
+}
+.speech-para:after{
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 90px;
+    background: #fff;
+    left: -90px;
+    top: 10px;
+}
+.owl-controls{
+    bottom: 100px;
+    position: absolute;
+    right: 30px;
+}
+.owl-nav{
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+}
+.owl-next i,.owl-prev i{
+    color: #fff;
+    font-size: 26px;
+    margin-left: 20px;
+}
+/* ============================================
+             End Speech CSS
+===============================================*/
+
+/* ============================================
+             7.Start Branding CSS
+===============================================*/
+.branding-area{
+    padding: 100px 0px;
+}
+.single-brand{
+    display: inline-block;
+}
+/* ============================================
+             End Branding CSS
+===============================================*/
+
+/* ============================================
+             8.Start Contact CSS
+===============================================*/
+.contact-adress{
+    background: url(images/contact-bg.jpg) no-repeat 0 0/cover;
+    padding: 80px 80px;
+    position: relative;
+}
+.contact-adress ul li h6{
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+}
+.contact-adress ul li p span{
+    display: block;
+}
+.contact-adress ul li{
+    margin-bottom: 43px;
+}
+.same-width {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background: transparent none repeat scroll 0 0;
+  border-color: -moz-use-text-color -moz-use-text-color #525252;
+  -webkit-border-image: none;
+  -o-border-image: none;
+  border-image: none;
+  border-style: none none solid;
+  border-width: medium medium 1px;
+  margin-bottom: 30px;
+  resize: none;
+  width: 60%;
+  padding: 10px 0px;
+    color: #525252;
+}
+.same-width:focus {
+    color: #2362bb;
+    border-bottom: 1px solid #2362bb
+}
+.contact-form{
+    padding: 50px 56px;
+    background: #131313;
+}
+.contact-address-overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width:100%;
+    height: 100%;
+    background: #2362bb;
+    opacity:0.97;
+}
+.add{
+    position: relative;
+    z-index: 3;
+}
+.contact-form .creative-link{
+    margin-top: 36px;
+    color: #ef4836;
+}
+.contact-form .creative-link a{
+    color: #ef4836;
+    font-size: 18px;
+    font-weight: 700;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+.contact-form .creative-link a:hover{
+    color: #fff;
+}
+.contact-form h3{
+    font-size: 30px;
+    color: #fff;
+    font-weight: 300;
+    position: relative;
+}
+.contact-form h3:after{
+    position: absolute;
+    left: -120px;
+    content: "";
+    top:12px;
+    width:90px;
+    height: 1px;
+    background: #fff;
+}
+.contact-area .success-record{
+    color: #016501;
+}
+.contact-form button{
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: medium none;
+    color: #EF4836;
+    cursor: pointer;
+    float: left;
+    font-size: 18px;
+    font-weight: 800;
+    text-align: left;
+    width: 100%;
+    margin-top: 30px;
+}
+.contact-form button i {
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+.contact-form button:hover i {
+    transform: translateX(10px)
+}
+.contact-content{
+    padding: 0px 15px;
+}
+/* ============================================
+             End Contact CSS
+===============================================*/
+
+/* ============================================
+             9.Start Footer CSS
+===============================================*/
+.footer-area{
+    padding: 80px 0px;
+}
+.footer-icon{
+    float: right;
+    margin-top: 20px;
+}
+.footer-copyright p a{
+    margin-right: 15px;
+    color: #EF4836;
+}
+.footer-icon a{
+    margin-left: 10px;
+    color: #fff;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    font-size: 16px;
+}
+.footer-icon a:hover{
+    color: #2362bb;
+}
+/* ============================================
+             End Footer CSS
+===============================================*/
+/* Preload */
+#preload {
+	background: #000;
+	height: 100%;
+	left: 0;
+	position: fixed;
+	top: 0;	
+	width: 100%;
+	z-index: 998;
+}
+
+#preload-content {
+	height: 100px;
+	left: 50%;
+	margin-left: -50px;
+	margin-top: -50px;
+	position: absolute;
+	top: 50%;
+	width: 100px;
+	z-index: 999;
+}
+
+.preload-text {
+	color: #EF4836;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+	text-align: center;
+    font-weight: 400;
+}
+.preload-text span{
+	color: #fff;
+    font-weight: 700;
+}
+
+.preload-spinner {
+	margin: 0 auto 14px;
+	text-align: center;
+}
+
+.bounce1,
+.bounce2,
+.bounce3 {
+	-webkit-animation-name: bounce;
+	-webkit-animation-duration: 1.4s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: ease-in-out;
+	-webkit-animation-fill-mode: both;
+	-moz-animation-name: bounce;
+	-moz-animation-duration: 1.4s;
+	-moz-animation-iteration-count: infinite;
+	-moz-animation-timing-function: ease-in-out;
+	-moz-animation-fill-mode: both;
+	-webkit-animation-name: bounce;
+	animation-name: bounce;
+	-webkit-animation-duration: 1.4s;
+	animation-duration: 1.4s;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	-webkit-animation-timing-function: ease-in-out;
+	animation-timing-function: ease-in-out;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	background: #EF4836;
+	display: inline-block;
+	height: 20px;
+	margin: 0 3px;
+	opacity: 0.6;
+	width: 20px;
+    border-radius: 50%;
+    border:3px solid #ccc;
+    
+}
+
+.bounce1 {
+	-webkit-animation-delay: -0.32s;
+	animation-delay: -0.32s;
+}
+
+.bounce2 {
+	-webkit-animation-delay: -0.16s;
+	animation-delay: -0.16s;
+}
+
+@-webkit-keyframes bounce {
+	0%, 80%, 100% { -webkit-transform: scale(0.0) }
+	40% { -webkit-transform: scale(1.0) }
+}
+@keyframes bounce {
+	0%, 80%, 100% { -webkit-transform: scale(0.0); transform: scale(0.0) }
+	40% { -webkit-transform: scale(1.0); transform: scale(1.0) }
+}
+/* preload */
+
+/* ============================================
+            Start slider version style
+===============================================*/
+#home_two .creative-video{
+    width:40%;
+    float: left;
+}
+#home_two .creative-content {
+  padding: 65px 80px;
+  width: 60%;
+  float: right;
+}
+/* ============================================
+            End slider version style
+===============================================*/
+
+/* ============================================
+            Start video version style
+===============================================*/
+#home_three video{
+    width:100%;
+    border: 2px solid #000;
+}
+#home_three .creative-content {
+  padding: 0px 48px;
+}
+#home_three .creative-area {
+  padding-top: 100px;
+}
+/* ============================================
+            End video version style
+===============================================*/
