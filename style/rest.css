@@ -1,0 +1,257 @@
+
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  min-width: 1230px;
+  overflow-anchor: none;
+  background-color: #eee;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+ul,
+ol,
+dl {
+  list-style: none;
+}
+
+/* flex å¸ƒå±€ */
+.flex {
+  display: flex;
+}
+
+.jc_sb {
+  justify-content: space-between;
+}
+
+.jc_sa {
+  justify-content: space-around;
+}
+
+.column {
+  flex-direction: column;
+}
+
+/* icon */
+.head-userinfo-avatar span,
+.comm-icon-phone,
+.comm-icon-search,
+.top-act-link,
+.icon-new {
+  background-image: url(../images/icon/topfoot-spr.png);
+  background-size: 405px 178px;
+  background-repeat: no-repeat;
+}
+
+.more-arrow,
+.act-item > .innerhover-border .hover-border-1,
+.hover-border-1,
+.icon-kh,
+.icon-new-1,
+.icon-fhcx,
+.icon-yxzl,
+.icon-xgzd,
+.icon-tft,
+.icon-101,
+.icon-yz,
+.icon-wxbd,
+.more-arrow-2,
+.more-arrow-1,
+.icon-hyp,
+.icon-hyp-hover,
+.rn-fanart i,.rn-fanart.selected i,.rn-fanart:hover i,
+.rn-rmhd i,
+.rn-rmhd.selected i,
+.rn-spzx i,
+.rn-spzx.selected i,
+.rn-spzx:hover i,
+.rn-sszx i,
+.rn-sszx.selected i,
+.rn-sszx:hover i,
+.rn-yxtj i,
+.rn-yxtj.selected i,
+.rn-yxtj:hover i ,
+.rn-polo i,
+.icon-home,
+.icon-arrow-2,
+.icon-spzx,
+.icon-sszx,
+.icon-gift {
+  background-image: url(../images/icon/comm-spr.png);
+  background-size: 393px 200px;
+  background-repeat: no-repeat;
+}
+
+.btn-flashmen,
+.champion-one-hover > .border,
+.inner-hover-href,
+.week-free-a,
+.inline-icon-0-left,
+.inline-icon-0-right,
+.more-hotprogram,
+.part-tab-title>span:after,
+.hover-icon:after,
+.icon-666,
+.inline-icon-1,
+.btn-play-1>i,
+.btn-play-1>a,
+.hover-border-2 {
+  background-image: url(../images/icon/index-spr.png);
+  background-size: 638px 572px;
+  background-repeat: no-repeat;
+}
+
+.foot_ieg_logo,.logo-riot {
+  background-image: url(../images/main/footer/topfoot-spr.png);
+  background-size: 405px 178px;
+  background-repeat: no-repeat;
+}
+
+.foot_ieg_logo,.logo-riot {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.more-arrow,
+.more-arrow-1,
+.more-arrow-2 {
+  display: inline-block;
+  vertical-align: middle;
+  margin: -2px 0 0 5px;
+  animation: 1.5s linear infinite;
+}
+
+.icon-spzx {
+  display: inline-block;
+  vertical-align: middle;
+  margin: -2px 6px 0 0;
+}
+
+.icon-sszx {
+  display: inline-block;
+  vertical-align: middle;
+  margin: -2px 6px 0 0;
+}
+
+.icon-sszx {
+  background-position: -220px -46px;
+  width: 22px;
+  height: 21px;
+}
+
+.inline-icon-1 {
+  display: inline-block;
+  vertical-align: middle;
+  margin: -3px 10px 0 10px;
+}
+
+.icon-home {
+  display: inline-block;
+  vertical-align: middle;
+  margin: -3px 9px 0 0;
+}
+
+.icon-home {
+  background-position: -343px -72px;
+  width: 16px;
+  height: 16px;
+}
+
+.icon-arrow-2 {
+  display: inline-block;
+  vertical-align: middle;
+  margin: -2px 21px 0 21px;
+}
+
+.icon-arrow-2 {
+  background-position: -387px -46px;
+  width: 5px;
+  height: 8px;
+}
+
+.icon-101,
+.icon-666,
+.icon-ax,
+.icon-fhcx,
+.icon-kh,
+.icon-wjsq,
+.icon-wxbd,
+.icon-xgzd,
+.icon-yxzl,
+.icon-yz,
+.icon-tft {
+  display: inline-block;
+  vertical-align: middle;
+  margin: -2px 4px 0 4px;
+}
+.icon-gift {
+  display: inline-block;
+  vertical-align: middle;
+  margin: -2px 6px 0 0;
+}
+
+.icon-gift {
+  background-position: -285px -99px;
+  width: 18px;
+  height: 21px;
+}
+
+.comm-head,
+.icon-new {
+  display: inline-block;
+  vertical-align: middle;
+  width: 14px;
+  height: 14px;
+  margin: -2px 2px 0 0;
+}
+
+.icon-new {
+  background-position: -381px -65px;
+}
+
+/* é€æ˜Žåº¦ ä¸º 0 */
+.opacity_0 {
+  opacity: 0;
+}
+
+.big {
+  height: 720px !important;
+}
+
+/* çœç•¥å· */
+.text_over {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.text_over_2 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+/* å¤–è¾¹è· */
+.mt_50 {
+  margin-top: 50px;
+}
+
+/* ç™½è‰²èƒŒæ™¯ + é˜´å½± */
+.f_s {
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+}
+
+/* æ–‡å­—åŠ ç²— */
+.bold {
+  font-weight: bold;
+}
+
+
+
